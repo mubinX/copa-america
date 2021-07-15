@@ -82,6 +82,12 @@ a{
   Player Cards
 ----------------- */
 
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .player-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -90,6 +96,7 @@ a{
     margin-bottom: 165px;
 }
 .player{
+    margin-right: 30px;
     width: 330px;
     height: 500px;
     padding-top: 15px;
@@ -297,12 +304,17 @@ Media Queries
 
     /* Player Card Section */
 
+    
     .player-cards{
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 24px;
         justify-items: center;
         margin-bottom: 60px;
+    }
+
+    .player{
+        margin: 0;
     }
 
     /* Blog Section */
