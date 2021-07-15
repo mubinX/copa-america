@@ -1,0 +1,397 @@
+/*-------------
+    Fonts 
+---------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*------------
+Common style
+---------------*/
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------------
+ Top-part style
+ ---------------*/
+
+.header-container{
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+
+.top-part{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.heading h1{
+    font-size: 64px;
+    color: white;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 44px;
+    transition: 1s;
+    
+    
+    
+}
+.button h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+.button .arrow{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.banner{
+    transition: 1.5s;
+}
+
+
+/* Hover effects for top part */
+
+
+.button:hover{
+    border-radius: 50px;
+    cursor: pointer;
+}
+.banner:hover{
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/*--------------
+  Player Cards
+----------------- */
+
+.player-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 35px;
+    justify-items: center;
+    margin-bottom: 165px;
+}
+.player{
+    width: 330px;
+    height: 500px;
+    padding-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    transition: 0.5s;
+}
+.player-cards p, h2{
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.player-cards h2{
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.player-cards p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #6C6C6C;
+}
+
+
+/* Hover effects for player card section */
+
+
+.player:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*------------
+     Blogs 
+ -------------*/
+
+.foot-blog h2{
+    font-size: 3em;
+    text-align: center;
+    color: #E02C6D;
+    transition: 1.5s;
+    display: table;
+    margin: auto;
+}
+
+.all-blogs{
+    display: flex;
+    justify-items: left;
+    margin-top: 60px;
+    /* align-content: stretch; */
+    justify-content: space-evenly;
+}
+.foot-thumbnail img{
+    transition: 0.8s;
+}
+.blog-info a{
+   color: white;
+}
+
+
+
+  /* Hover effects for blog section */
+
+
+.foot-blog h2:hover{
+    color: #2D25A0;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.foot-thumbnail img:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ 
+/*-------------------
+   Newsletter style  
+---------------------*/
+
+.newsletter-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.subscribe{
+    background-color: #E02C6D;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    transition: 1s;
+    
+}
+#email{
+    padding: 10px 25px;
+    padding-left: 15px;
+    border: 2px solid #E02C6D ;
+}
+
+.newsletter-thumbnail img{
+    transition: 1s;
+}
+
+
+/* Hover for newsletter section */
+
+.subscribe:hover{
+    border-radius: 30px;
+    cursor: pointer;
+}
+.newsletter-thumbnail img:hover{
+    transform: rotate(15deg);
+}
+
+
+
+/*---------------
+ Footer style
+ ----------------*/
+
+ footer{
+    margin-top: 158px;
+    text-align: center;
+}
+
+footer .logo img{
+    width: 483px;
+    height: 110px;
+}
+.icons{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.icons .social {
+    margin-right: 14px;
+    font-size: 32px;
+    color: #6C6C6C;
+}
+.copyright p{
+    font-size: 18px;
+}
+
+
+/*------------- 
+Media Queries 
+---------------*/
+
+@media Only screen and (max-width:688px) {
+    html,body{
+    /* width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px; */
+    overflow-x: hidden; 
+}
+
+    /* Top-part Section */
+    
+    .header-container{
+        width: 100%;
+        height: 727px;
+        background-color: #2D25A0;
+        margin-bottom: 47px;
+    }
+    
+    
+    .top-part{
+        flex-direction: column;
+        padding-top: 90px;
+    }
+
+    .heading h1{
+        font-size: 36px;
+        color: white;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 16px;
+    }
+
+    .button{
+        margin-left: 16px;
+        margin-bottom: 45px;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+    .banner img{
+        width: 329px;
+        height: 259px;
+    }
+
+    /* Player Card Section */
+
+    .player-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+        justify-items: center;
+        margin-bottom: 60px;
+    }
+
+    /* Blog Section */
+    
+
+    .foot-blog h2{
+        font-size: 40px;
+    }
+
+    .all-blogs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+
+    .blog-info .button{
+        margin-left: 0;
+        width: 130px;
+    }
+
+    .blog-info .button h5{
+        margin-top: 0;
+    }
+    
+    .foot-thumbnail img{
+        width: 250px;
+    }
+
+    /* Newsletter section */
+
+    .newsletter-container{
+        margin-top: 50px;
+    }
+
+    .newsletter{
+        flex-direction: column;
+        height: 550px;
+    }
+
+    .newsletter-info h1, p{
+        padding-left: 20px;
+    }
+
+    .subscription{
+        display: flex;
+        justify-content: center;
+    }
+
+    #email{
+        padding: 10px;
+        padding-left: 15px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    .subscribe{
+        padding: 12px;
+    }
+        
+
+    .newsletter-thumbnail img{
+        width: 93%;
+    }
+
+
+    /* Footer section */
+
+    footer{
+        margin-top: 43px;
+    }
+
+
+    footer .logo img{
+        width: 220px;
+        height: 60px;
+    }
+    
+    .icon-info{
+        text-align: center;
+    }
+    .icons .social{
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    .copyright p{
+        font-size: 10px;
+        margin-right: 18px;
+        
+    }
+}
